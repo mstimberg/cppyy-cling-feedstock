@@ -42,8 +42,6 @@ requirements:
     - ${{ compiler('cxx') }}
     - ${{ stdlib("c") }}
     - cmake
-    # We need a find that understand -name
-    - findutils
     - if: unix
       then: make
   host:
